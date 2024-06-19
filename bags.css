@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+
+body {
+    background-color:  #5b826683 !important;
+}
+
+footer {
+    background-color: #273E47;
+    color: white;
+    z-index: 11110 !important;
+}
+
+.esconde{
+    display: none !important;
+  }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+a {
+    color: inherit; /* Remove o padrão de cor azul */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: inherit; /* Mantém o tamanho da fonte herdado */
+    font-family: inherit; /* Mantém a família da fonte herdada */
+    line-height: inherit; /* Mantém a altura da linha herdada */
+  }
+  
+
+.esconde{
+    display: hidden;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.buttons {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.buttons .all-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.buttons .letter-btn {
+    background-color: #eee;
+    color: black;
+}

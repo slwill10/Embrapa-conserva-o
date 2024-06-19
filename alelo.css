@@ -1,0 +1,30 @@
+.centro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.centro p{
+  text-align: center;
+}
+
+#cards_alelo .card-body{
+  text-align: center;
+  color: white;
+}
+
+#cards_alelo .card-body.animal{
+  background-color: #c0400c;
+}
+#cards_alelo .card-body.micro{
+  background-color: #00b3fa;
+}
+#cards_alelo .card-body.vegetal{
+  background-color: #839a00;
+}
+
+.invisivel{
+  display: none;
+}

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Tabela por Letra Inicial</title>
+    <link rel="stylesheet" href="bags.css">
+</head>
+<body>
+    <h1>Filtro de Tabela por Letra Inicial</h1>
+
+    <div class="container">
+        <div class="buttons">
+            <button class="all-btn">Todos</button>
+            <button class="letter-btn" data-letter="A">A</button>
+            <button class="letter-btn" data-letter="B">B</button>
+            <button class="letter-btn" data-letter="C">C</button>
+            <button class="letter-btn" data-letter="D">D</button>
+            <button class="letter-btn" data-letter="E">E</button>
+            <button class="letter-btn" data-letter="F">F</button>
+            <button class="letter-btn" data-letter="G">G</button>
+            <button class="letter-btn" data-letter="H">H</button>
+            <button class="letter-btn" data-letter="I">I</button>
+            <button class="letter-btn" data-letter="J">J</button>
+            <button class="letter-btn" data-letter="K">K</button>
+            <button class="letter-btn" data-letter="L">L</button>
+            <button class="letter-btn" data-letter="M">M</button>
+            <button class="letter-btn" data-letter="N">N</button>
+            <button class="letter-btn" data-letter="O">O</button>
+            <button class="letter-btn" data-letter="P">P</button>
+            <button class="letter-btn" data-letter="Q">Q</button>
+            <button class="letter-btn" data-letter="R">R</button>
+            <button class="letter-btn" data-letter="S">S</button>
+            <button class="letter-btn" data-letter="T">T</button>
+            <button class="letter-btn" data-letter="U">U</button>
+            <button class="letter-btn" data-letter="V">V</button>
+            <button class="letter-btn" data-letter="W">W</button>
+            <button class="letter-btn" data-letter="X">X</button>
+            <button class="letter-btn" data-letter="Y">Y</button>
+            <button class="letter-btn" data-letter="Z">Z</button>
+            </div>
+
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Vertente</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#" onclick="abrirPDF('BAG.pdf', 20)">Abacaxi</a></td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" onclick="abrirPDF('BAG.pdf', 21)">Abóboras e morangas</a></td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Acerola</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Algodão</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Amburana cearensis</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Amendoim forrageiro</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Espécies silvestres de Arachis L.</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Arroz</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Azevém</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Babaçu</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Bacurizeiro (Platonia insignis Mart.)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Banana</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Batata</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Batata-doce (Embrapa Clima Temperado)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Batata-doce (Embrapa Hortaliças)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Berinjela</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Brachiaria</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Bromélia</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Cajueiro</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Camucamuzeiro</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Canola</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Capsicum (Embrapa Clima Temperado)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Capsicum (Embrapa Hortaliças)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Cártamo</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Castanha-do-brasil</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Cebola (Embrapa Hortaliças)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Cebola (Embrapa Clima Temperado)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Cenchrus</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Cenoura</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Cevada</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Citros</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Coco</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Cucurbita (do semiárido)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Cucurbitáceas</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Cupuaçu</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Curauá</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Cynodon</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Espinheira-santa</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Faveleira</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Forrageiras de importância para o Sul do Brasil</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Fruteiras nativas do Sul do Brasil</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Gergelim</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Guaranazeiro</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Hevea (gênero)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Hortaliças não convencionais</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Inhame e inhame-cará</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Ipecacuanha</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Jaborandi</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Leguminosas forrageiras de clima temperado</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Maçã (Malus spp.)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Macaúba</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Mandioca do Semiárido do Nordeste do Brasil</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Mandioquinha-salsa</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Mangaba</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Mangueira</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Maracujá</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Plantas medicinais e aromáticas da região Centro-Oeste</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Melão (Embrapa Hortaliças)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Murucizeiro (Byrsonima crassifolia (L.) Kunth)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Melancia (Embrapa Semiárido)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Melancia (Embrapa Hortaliças)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Melão (Embrapa Semiárido)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Milheto</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Milho</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Morangueiro</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Plantas ornamentais do bioma Pampa</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Plantas ornamentais tropicais</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Outros cereais de inverno</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Panicum maximum Jacq.</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Paspalum</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Passiflora L. ‘flor da paixão’</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Passiflora L.</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Pereira (Pyrus spp.)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Pinus spp.</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Piper hispidinervum C.DC. e Piper aduncum L.</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Prunóideas</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Psidium</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Seringueira</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Solanum silvestres</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Sorgo</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Spondias</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Stylosanthes spp.</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Timbó</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Tomate</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Trigo</td>
+                        <td>Vegetal</td>
+                    <tr>
+                        <td>Forrageiras de importância para o Sul do Brasil</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Fruteiras nativas do Sul do Brasil</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Gergelim</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Guaranazeiro</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Hevea (gênero)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Hortaliças não convencionais</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Inhame e inhame-cará</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Ipecacuanha</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Jaborandi</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Leguminosas forrageiras de clima temperado</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Maçã (Malus spp.)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Macaúba</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Mandioca do Semiárido do Nordeste do Brasil</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Mandioquinha-salsa</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Mangaba</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Mangueira</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Maracujá</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Plantas medicinais e aromáticas da região Centro-Oeste</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Melão (Embrapa Hortaliças)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Murucizeiro (Byrsonima crassifolia (L.) Kunth)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Melancia (Embrapa Semiárido)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Melancia (Embrapa Hortaliças)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Melão (Embrapa Semiárido)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Milheto</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Milho</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Morangueiro</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Plantas ornamentais do bioma Pampa</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Plantas ornamentais tropicais</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Outros cereais de inverno</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Panicum maximum Jacq.</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Paspalum</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Passiflora L. ‘flor da paixão’</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Passiflora L.</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Pereira (Pyrus spp.)</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Pinus spp.</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Piper hispidinervum C.DC. e Piper aduncum L.</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Prunóideas</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Psidium</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Seringueira</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Solanum silvestres</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Sorgo</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Spondias</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Stylosanthes spp.</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Timbó</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Tomate</td>
+                        <td>Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td>Trigo</td>
+                        <td>Vegetal</td>
+    </div>
+
+    <div id="pdf-container"></div>
+
+    <script src="bags.js"></script>
+</body>
+</html>

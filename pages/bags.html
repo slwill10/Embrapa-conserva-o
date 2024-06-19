@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAGS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
+  <link rel="stylesheet" href="../output.css">
+  <link rel="stylesheet" href="../bags.css">
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+</head>
+
+<body>
+  <header> 
+    <img src="../img/header.png" alt="" srcset="" width="100%">
+  </header>
+
+  <div id="listaDasBags" class="container text-center mt-5">
+    <h1 class="mb-5">Lista das BAGs</h1>
+
+    <div id="pdf-container"></div>
+    <a href="#listaDasBags" onclick="voltar()" id="btn_voltar" class="btn btn-warning esconde mt-3 mb-3"><< Voltar</a>
+    
+    <div class="buttons">
+        <button class="allcat-btn">Todos</button>
+        <button class="cat-btn" data-letter="A">Animais</button>
+        <button class="cat-btn" data-letter="V">Vegetais</button>
+        <button class="cat-btn" data-letter="M">Microrganismos</button>
+    </div>
+
+    <div class="buttons">
+      <button class="all-btn">Todos</button>
+      <button class="letter-btn" data-letter="A">A</button>
+      <button class="letter-btn" data-letter="B">B</button>
+      <button class="letter-btn" data-letter="C">C</button>
+      <button class="letter-btn" data-letter="D">D</button>
+      <button class="letter-btn" data-letter="E">E</button>
+      <button class="letter-btn" data-letter="F">F</button>
+      <button class="letter-btn" data-letter="G">G</button>
+      <button class="letter-btn" data-letter="H">H</button>
+      <button class="letter-btn" data-letter="I">I</button>
+      <button class="letter-btn" data-letter="J">J</button>
+      <button class="letter-btn" data-letter="K">K</button>
+      <button class="letter-btn" data-letter="L">L</button>
+      <button class="letter-btn" data-letter="M">M</button>
+      <button class="letter-btn" data-letter="N">N</button>
+      <button class="letter-btn" data-letter="O">O</button>
+      <button class="letter-btn" data-letter="P">P</button>
+      <button class="letter-btn" data-letter="Q">Q</button>
+      <button class="letter-btn" data-letter="R">R</button>
+      <button class="letter-btn" data-letter="S">S</button>
+      <button class="letter-btn" data-letter="T">T</button>
+      <button class="letter-btn" data-letter="U">U</button>
+      <button class="letter-btn" data-letter="V">V</button>
+      <button class="letter-btn" data-letter="W">W</button>
+      <button class="letter-btn" data-letter="X">X</button>
+      <button class="letter-btn" data-letter="Y">Y</button>
+      <button class="letter-btn" data-letter="Z">Z</button>
+    </div>
+
+      <table id="myTable" class="display">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Vertente</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 20)">Abacaxi</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 21)">Abóboras e morangas</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 22)">Acerola</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 23)">Algodão</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 24)">Amburana cearensis</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 25)">Amendoim forrageiro</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 26)">Arachis</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 27)">Arroz</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 28)">Azevém</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 29)">Babaçu</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 30)">Bacurizeiro (Platonia insignis Mart.)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 31)">Banana</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 32)">Batata</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 33)">Batata-doce (Embrapa Clima Temperado)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 34)">Batata-doce (Embrapa Hortaliças)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 35)">Berinjela</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 36)">Brachiaria</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 37)">Bromélia</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 38)">Cajueiro</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 39)">Camucamuzeiro</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 40)">Canola</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 41)">Capsicum (Embrapa Clima Temperado)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 42)">Capsicum (Embrapa Hortaliças)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 43)">Cártamo</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 44)">Castanha-do-brasil</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 45)">Cebola (Embrapa Hortaliças)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 46)">Cebola (Embrapa Clima Temperado)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 47)">Cenchrus</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 48)">Cenoura</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 49)">Cevada</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 50)">Citros</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 51)">Coco</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 52)">Cucurbita (do semiárido)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 53)">Cucurbitáceas</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 54)">Cupuaçu</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 55)">Curauá</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 56)">Cynodon</a></td>
+                    <td>Vegetal</td>
+                </tr>
+    
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 57)">Espinheira-santa</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 58)">Faveleira</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 59)">Forrageiras de importância para o Pantanal</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 60)">Forrageiras de importância para o Sul do Brasil</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 61)">Fruteiras nativas do Sul do Brasil</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 62)">Gergelim</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 63)">Guaranazeiro</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 64)">Hevea (gênero)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 65)">Hortaliças não convencionais</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 66)">Inhame e inhame-cará</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 67)">Ipecacuanha</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 68)">Jaborandi</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 69)">Leguminosas forrageiras de clima temperado</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 70)">Maçã (Malus spp.)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 71)">Macaúba</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 72)">Mandioca do Semiárido do Nordeste do Brasil</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 73)">Mandioquinha-salsa</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 74)">Mangaba</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 75)">Mangueira</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 76)">Maracujá</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 77)">Medicinais e aromáticas da região Centro-Oeste</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 78)">Melão (Embrapa Hortaliças)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 79)">Murucizeiro (Byrsonima crassifolia (L.) Kunth)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 80)">Melancia (Embrapa Semiárido)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 81)">Melancia (Embrapa Hortaliças)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 82)">Melão (Embrapa Semiárido)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 83)">Milheto</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 84)">Milho</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 85)">Morangueiro</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 86)">Ornamentais do bioma Pampa</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 87)">Ornamentais tropicais</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 88)">Outros cereais de inverno</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 89)">Panicum maximum Jacq.</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 90)">Paspalum</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 91)">Passiflora L. ‘flor da paixão’</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 92)">Passiflora L.</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 93)">Pereira (Pyrus spp.)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 94)">Pinus spp.</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 95)">Piper hispidinervum C.DC. e Piper aduncum L.</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 96)">Prunóideas</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 97)">Psidium</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 98)">Seringueira</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 99)">Solanum silvestres</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 100)">Sorgo</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 101)">Spondias</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 102)">Stylosanthes spp.</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 103)">Timbó</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 104)">Tomate</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 105)">Trigo</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>     
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 106)">Umbu</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 107)">Uva</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 108)">Uva (Embrapa Uva e Vinho)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 109)">Herbário CNPO</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 110)">Banco de DNA</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 111)">Colbase (Coleção de base de germoplasma-semente)</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 112)">Coleção in vitro</a></td>
+                    <td>Vegetal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 114)">Bovino Curraleiro pé-duro (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 115)">Bovino Pantaneiro (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 116)">Bovino da raça Sindi (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 117)">Búfalo da raça Carabao e tipo Baio (Bubalis) (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 118)">Cavalo Pantaneiro (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 119)">Equino Marajoara e mini cavalo Puruca (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 120)">Cavalo Lavradeiro (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 121)">Ovino da raça Santa Inês (in situ) (Embrapa Caprinos e Ovinos)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 122)">Ovino da raça Santa Inês (in situ) (Embrapa Tabuleiros Costeiros)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 123)">Ovino da raça Santa Inês (in situ) (Embrapa Meio-Norte)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 124)">Ovino Barriga Negra (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 125)">Ovino Bergamácia (in situ) (em formação)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 126)">Ovelha Crioula (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 127)">Ovino da raça Morada Nova (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 128)">Ovino localmente adaptado do Pantanal (in situ) (em formação)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 129)">Ovino da raça Somalis Brasileira (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 130)">Caprino da raça Canindé (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 131)">Caprino da raça Moxotó (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 132)">Caprinos naturalizados da região Meio-Norte (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 133)">Suíno da raça Moura (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 134)">Caititu (Pecari tajacu) (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 135)">Aves caipiras (em formação)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 136)">Linhagens de aves para corte (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 137)">Linhagens de postura de ovos brancos (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 138)">Linhagens de postura de ovos castanhos (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 139)">Caranha (Piaractus brachypomus) (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 140)">Pirarucu (Arapaima gigas) (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 141)">Tambaqui (Colossoma macropomum) (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 142)">Muçuã (Kinosternon scorpioides) (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 143)">Abelhas (in situ)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 144)">Coleção entomológica</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 145)">BBGA (Banco brasileiro de germoplasma animal)</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 146)">Banco de DNA e tecidos animais da Embrapa</a></td>
+                    <td>Animal</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 148)">Culturas de microrganismos multifuncionais (bactérias diazotróficas e promotores do crescimento de plantas)</a></td>
+                    <td>Microrganismos</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 149)">Fungos micorrízicos arbusculares (COFMEA)</a></td>
+                    <td>Microrganismos</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 150)">Fungos de invertebrados</a></td>
+                    <td>Microrganismos</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 151)">Fungos e oomicetos florestais</a></td>
+                    <td>Microrganismos</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 152)">Macrofungos para uso humano</a></td>
+                    <td>Microrganismos</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 153)">Microrganismos de importância agrícola e ambiental</a></td>
+                    <td>Microrganismos</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 154)">Microrganismos de interesse da agroindústria e pecuária</a></td>
+                    <td>Microrganismos</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 155)">Microrganismos de interesse para suinocultura e avicultura</a></td>
+                    <td>Microrganismos</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 156)">Microrganismos multifuncionais (Arroz e Feijão)</a></td>
+                    <td>Microrganismos</td>
+                </tr>
+                <tr>
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 157)">Microrganismos multifuncionais de clima temperado</a></td>
+                    <td>Microrganismos</td>
+                </tr> 
+                <tr> 
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 158)">Microrganismos para controle de fitopatógenos e plantas daninhas</a></td> 
+                    <td>Microrganismos</td> 
+                </tr> 
+                <tr> 
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 159)">Microrganismos patogênicos a caprinos e ovinos</a></td> 
+                    <td>Microrganismos</td> 
+                </tr> 
+                <tr> 
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 160)">Microrganismos patogênicos para animais de produção</a></td> 
+                    <td>Microrganismos</td> 
+                </tr> 
+                <tr> 
+                    <td><a href="#listaDasBags" onclick="abrirPDF('../BAG.pdf', 161)">Vírus de invertebrados</a></td> 
+                    <td>Microrganismos</td> 
+                </tr>                
+            </tbody>
+        </table>
+        
+</div>
+
+  <footer>
+    <img src="../img/footer1.png" alt="" srcset="" width="100%">
+    <img src="../img/footer2.png" alt="" srcset="" width="100%">
+  </footer>
+
+  <div class="navbar-container">
+    <nav class="navbar">
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="../index.html" class="navbar__link"><i data-feather="home"></i><span>Home</span></a>
+        </li>
+        <li class="navbar__item">
+          <a href="alelo.html" class="navbar__link"><i data-feather="codepen"></i><span>Alelo</span></a>
+        </li>
+        <li class="navbar__item">
+          <a href="bags.html" class="navbar__link"><i data-feather="hard-drive"></i><span>BAG</span></a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link"><i data-feather="briefcase"></i><span>Intercâmbio</span></a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link"><i data-feather="feather"></i><span>Quarentena</span></a>
+        </li>
+        <li class="navbar__item">
+          <a href="bancoGenetico.html" class="navbar__link"><i data-feather="folder"></i><span>Banco genético</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <script>feather.replace()
+    //https://twitter.com/One_div</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+    <script src="../bags.js"></script>
+
+    <script src="https://kit.fontawesome.com/837deabaea.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+
+</body>
+
+</html>
